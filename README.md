@@ -2,6 +2,7 @@
 
 **Description:**
 Simple interactive todo app where user can insert, edit and delete tasks to do.
+
 **Why:**
 This project was created to practice React, java script functions, CSS formatting and HTML tags.
 

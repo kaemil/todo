@@ -1,0 +1,243 @@
+body {
+  margin: 0;
+  font-family: 'Itim', cursive;
+}
+
+.todo__header {
+  padding: 15px;
+  font-size: 40px;
+  background-color: #00a0ac;
+  text-align: center;
+  color: #ffffff;
+}
+
+.todo__itemList {
+  background-color: #bdbdbd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.todo__item {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.todo__itemName {
+  border-bottom: 2px solid #bdbdbd;
+  background-color: #ffffff;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+}
+
+.todo__editBar {
+  border-bottom: 2px solid #bdbdbd;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.todo__editInput {
+  font-family: 'Itim', cursive;
+  outline: none;
+  border: none;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  width: calc(100% - 50px);
+}
+
+.todo__editInput:focus {
+  outline: none;
+  background-color: #e6e6e6;
+  color: #000000;
+}
+
+.todo__editButton {
+  font-family: 'Itim', cursive;
+  width: 50px;
+  border: none;
+  background-color: #ffffff;
+  border-left: 2px solid #bdbdbd;
+}
+
+.todo__editButton:hover {
+  background-color: #2ee455;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.todo__buttonsBar {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.todo__itemEditing {
+  font-family: 'Itim', cursive;
+  outline: none;
+  width: 50%;
+  cursor: pointer;
+  border: none;
+  background-color: #ffffff;
+  border-right: 1px solid #bdbdbd;
+}
+
+.todo__itemEditing:hover {
+  background-color: #e4952e;
+  color: #ffffff;
+}
+
+.todo__itemDeleting {
+  font-family: 'Itim', cursive;
+  width: 50%;
+  cursor: pointer;
+  border: none;
+  background-color: #ffffff;
+  border-left: 1px solid #bdbdbd;
+}
+
+.todo__itemDeleting:hover {
+  background-color: #e42e2e;
+  color: #ffffff;
+}
+
+.todo__itemAdding {
+  background-color: #00a0ac;
+  padding: 15px;
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.todo__input {
+  font-family: 'Itim', cursive;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #ffff;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  padding: 7px;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.todo__input:hover, .todo__input:focus {
+  color: #00a0ac;
+  background-color: #e6e6e6;
+  outline: none;
+  padding: 7px;
+  font-size: 16px;
+}
+
+.todo__addButton {
+  font-family: 'Itim', cursive;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #ffffff;
+  color: #00a0ac;
+  border: none;
+  outline: none;
+  padding: 7px;
+  font-size: 16px;
+}
+
+.todo__addButton:hover, .todo__addButton:active {
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background-color: #00a0ac;
+  outline: none;
+  padding: 5px;
+  font-size: 16px;
+}
+
+@media (min-width: 992px) {
+  .todo {
+    max-width: 600px;
+    margin: 50px auto 0 auto;
+  }
+  .todo__header {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .todo__item {
+    margin-top: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .todo__itemName {
+    border-bottom: none;
+    width: 100%;
+  }
+  .todo__itemEditing, .todo__itemDeleting {
+    width: 50px;
+    border-right: none;
+    border-left: 2px solid #BDBDBD;
+  }
+  .todo__buttonsBar {
+    width: auto;
+  }
+  .todo__editBar {
+    border-bottom: none;
+  }
+  .todo__editInput {
+    padding: 0 20px 0 20px;
+  }
+  .todo__itemAdding {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .todo__input {
+    width: 250px;
+    border-radius: 10px;
+  }
+  .todo__addButton {
+    width: 75px;
+    border-radius: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
